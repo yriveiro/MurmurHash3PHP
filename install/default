@@ -1,7 +1,5 @@
 #!/bin/bash
-git clone git://github.com/Vaizard/MurmurHash3PHP.git
-cd MurmurHash3PHP
 phpize
 ./configure --enable-murmurhash3
-make install
-cp 06_murmurhash3.ini /etc/php.d/
+sudo make install
+sudo cp 06_murmurhash3.ini /etc/php.d/
