@@ -2,4 +2,4 @@
 phpize
 ./configure --enable-murmurhash3
 sudo make install
-sudo cp 06_murmurhash3.ini /etc/php.d/
+sudo cp 06_murmurhash3.ini /etc/php/7.0/mods-available/
