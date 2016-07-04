@@ -95,7 +95,7 @@ ZEND_FUNCTION(murmurhash3_128)
     result[MURMURHASH3_128_OUTPUT_LENGTH * 2] = 0;
 
     // Return the result
-    RETURN_STRING(result, 1);
+    RETURN_STRING(result);
 }
 
 ZEND_FUNCTION(murmurhash3_32)
