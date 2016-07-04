@@ -32,7 +32,7 @@ extern "C" {
 #define MURMURHASH3_32_OUTPUT_LENGTH  4
 
 
-static function_entry murmurhash3_functions[] = {
+static zend_function_entry murmurhash3_functions[] = {
     ZEND_FALIAS(murmurhash3, murmurhash3_128, NULL)
     ZEND_FE(murmurhash3_128, NULL)
     ZEND_FE(murmurhash3_32, NULL)
@@ -122,5 +122,5 @@ ZEND_FUNCTION(murmurhash3_32)
     result[MURMURHASH3_32_OUTPUT_LENGTH * 2] = 0;
 
     // Return the result
-    RETURN_STRING(result, 1);
+    RETURN_STRING(result);
 }
